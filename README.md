@@ -1,13 +1,13 @@
-# A Rusty Crate which providers interop to the Jack Audio Connection Kit(http://jackaudio.org/)
+## A Rusty Crate which providers interop to the Jack Audio Connection Kit(http://jackaudio.org/)
 
-# Build
+## Build
 1. Install the Jack Audio Connection Kit server: http://jackaudio.org/download
 2. make
 
-# Example
+## Example
 Please see Cog(https://github.com/psantacl/cog) for an example on using this crate.
 
-# List of Jack functions currently supported
+## List of Jack functions currently supported
 This list is always growing.  If you need something not on here, just message me and I'll add it.  I was planning on tackling the MIDI API next.
 
     fn jack_client_open( client_name : CStr,  options : c_int, status: *c_int) -> *JackClient;
