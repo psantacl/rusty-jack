@@ -37,4 +37,4 @@ This list is always growing as new functions are needed.  If you need something 
     fn jack_ringbuffer_write_space ( rb: *JackRingBuffer ) -> size_t;
     fn jack_ringbuffer_write  ( rb: *JackRingBuffer, src : *char, cnt : size_t ) -> size_t;
 
-For a complete list of the Jack API, please the [link docs](http://jackaudio.org/files/docs/html/index.html)
+For a complete list of the Jack API, please see the [docs](http://jackaudio.org/files/docs/html/index.html)
