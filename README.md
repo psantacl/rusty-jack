@@ -1,12 +1,12 @@
 ## Rusty Jack 
-A Rust crate which providers interop to the Jack Audio Connection Kit(http://jackaudio.org/)
+A Rust crate which providers interop to the [Jack Audio Connection Kit](http://jackaudio.org/)
 
 ## Build
-1. Install the Jack Audio Connection Kit server: http://jackaudio.org/download
+1. [Install](http://jackaudio.org/download) the Jack Audio Connection Kit server: 
 2. `make`
 
 ## Example
-Please see Cog(https://github.com/psantacl/cog) for an example on using this crate.
+Please see [Cog](https://github.com/psantacl/cog) for an example on using this crate.
 
 ## List of Jack functions currently supported
 This list is always growing as new functions are needed.  If you need something not on here, just message me and I'll add it.  I was planning on tackling the MIDI API next.
