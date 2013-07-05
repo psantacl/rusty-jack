@@ -3,13 +3,13 @@ use core::str::raw::{from_c_str};
 
 use core::hashmap::linear;
 
-type JackClient               = c_void;
+pub type JackClient               = c_void;
 type JackPort                 = c_void;
 type CStr                    = *c_char;
 type CStrArray              = *CStr;
-type JackNFrames              = uint32_t;
+pub type JackNFrames              = uint32_t;
 type JackProcessCallback      = *u8;
-type JackDefaultAudioSample   = c_float;  
+pub type JackDefaultAudioSample   = c_float;  
 
 
 struct BoxedJackStatus {
@@ -55,7 +55,7 @@ fn write_cstr(c: *c_char) -> () {
 
 
 impl BoxedJackStatus {
-  fn parse_jack_status(& mut self) -> () {
+  pub fn parse_jack_status(& mut self) -> () {
     let mut all_statuses = linear::LinearMap::new();
     let mut remaining = self.val;
 
@@ -161,7 +161,7 @@ unsafe fn from_CStrArray(str_array: CStrArray, results : & mut ~[~str]) -> () {
 }
 
 
-fn register_output_port(client : * JackPort) -> (*JackPort) {
+pub fn register_output_port(client : * JackPort) -> (*JackPort) {
   unsafe { 
     do str::as_c_str(~"32 bit float mono audio") |default_audio| {
       do str::as_c_str(~"out") |port_name| {

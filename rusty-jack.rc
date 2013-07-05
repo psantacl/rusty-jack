@@ -1,4 +1,4 @@
-#[link(name = "rusty-jack", vers = "0.1", author = "psc")];
+#[link(name = "rusty_jack", vers = "0.1", author = "psc")];
 #[crate_type = "lib"];
 #[warn(non_camel_case_types)];
 #[allow(non_implicitly_copyable_typarams)]
